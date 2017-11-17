@@ -1,0 +1,22 @@
+{
+  "name": "freeze-types",
+  "version": "0.0.1",
+  "description": "Take any object value and lock down the types of its writable properties.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffmcmahan/freeze-types.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeffmcmahan/freeze-types/issues"
+  },
+  "homepage": "https://github.com/jeffmcmahan/freeze-types#readme"
+}

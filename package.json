@@ -1,7 +1,7 @@
 {
   "name": "freeze-types",
   "version": "0.1.1",
-  "description": "Take any object value and lock down the types of its writable properties.",
+  "description": "Lock down the types of object/array properties.",
   "main": "index.js",
   "directories": {
     "test": "tests"

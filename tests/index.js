@@ -99,6 +99,11 @@ assert.doesNotThrow(
 	'Should not throw when an object (no prototype) is overwritten with an object (no prototype).'
 )
 
+assert.throws(
+	()=>{delete user.name},
+	'Should throw when a frozen property is deleted.'
+)
+
 //================================================================ Extensions ======================
 
 user.ext = {}

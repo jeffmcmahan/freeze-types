@@ -45,4 +45,4 @@ freezeTypes(obj) 	// Re-freeze types to capture the extension.
 obj.age = false 	// throws
 ```
 
-However, once frozen, an object cannot be un-frozen (except by painful, fussy effort).
+However, once frozen, an object cannot be un-frozen (except by painful, fussy effort). Moreover, a frozen property cannot be deleted (frozen properties are non-configurable).

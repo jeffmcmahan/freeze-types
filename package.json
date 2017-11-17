@@ -1,6 +1,6 @@
 {
   "name": "freeze-types",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "Take any object value and lock down the types of its writable properties.",
   "main": "index.js",
   "directories": {

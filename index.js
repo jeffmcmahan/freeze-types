@@ -31,7 +31,7 @@ function throwError(key, oldValue, newValue) {
 		`Cannot set type-frozen ${key} property from type ${printValueType(oldValue)} to type `+
 		`${printValueType(newValue)}.`
 	)
-	const stack = err.stack.toString().split('\n').slice(1).filter(l => !l.includes('freezeTypes'))
+	const stack = err.stack.toString().split('\n').slice(1).filter(l => !l.includes('freeze-types'))
 	err.stack = ''
 	err.message = msg + '\n\n' + stack.join('\n')
 	throw err

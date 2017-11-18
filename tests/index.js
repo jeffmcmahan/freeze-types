@@ -104,6 +104,42 @@ assert.throws(
 	'Should throw when a frozen property is deleted.'
 )
 
+//============================================================ ES5 classes, literals ===============
+
+const ES5class = function ES5Class() {
+	this.stringProp = 'asdfs'
+	this.numberProp = Infinity
+	freezeTypes(this)
+}
+
+const es5classInstance = new ES5class()
+
+assert.throws(
+	()=> es5classInstance.stringProp = 5,
+	'Should throw when ES5 class instance prop set from String to Number.'
+)
+
+assert.throws(
+	()=> es5classInstance.numberProp = 'sdfg',
+	'Should throw when ES5 class instance prop set from Number to String.'
+)
+
+const literalObj = {
+	stringProp: 'kajsdh',
+	numberProp: -Infinity
+}
+freezeTypes(literalObj)
+
+assert.throws(
+	()=> literalObj.stringProp = 5,
+	'Should throw when literal prop set from String to Number.'
+)
+
+assert.throws(
+	()=> literalObj.numberProp = 'sdfg',
+	'Should throw when literal prop set from Number to String.'
+)
+
 //================================================================ Extensions ======================
 
 user.ext = {}
